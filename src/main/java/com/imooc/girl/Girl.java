@@ -1,8 +1,6 @@
 package com.imooc.girl;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 /**
  * @author by JoeShine
@@ -13,15 +11,10 @@ import javax.persistence.Id;
 public class Girl {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
-
     private Integer age;
-
     private String cupSize;
-
-    public Girl() {
-    }
 
     public Integer getId() {
         return id;

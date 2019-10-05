@@ -11,7 +11,7 @@ import java.sql.DatabaseMetaData;
  * 2019-10-04
  */
 
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class})
+@SpringBootApplication
 public class GirlApplication {
 
     public static void main(String[] args) {
