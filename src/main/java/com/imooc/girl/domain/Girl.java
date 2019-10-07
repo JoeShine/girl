@@ -1,6 +1,7 @@
 package com.imooc.girl.domain;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
 
 /**
  * @author by JoeShine
@@ -13,6 +14,7 @@ public class Girl {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+    @Min(value = 18,message = "禁止未成年少女入内")
     private Integer age;
     private String cupSize;
 
@@ -38,5 +40,14 @@ public class Girl {
 
     public void setCupSize(String cupSize) {
         this.cupSize = cupSize;
+    }
+
+    @Override
+    public String toString() {
+        return "Girl{" +
+                "id=" + id +
+                ", age=" + age +
+                ", cupSize='" + cupSize + '\'' +
+                '}';
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.imooc.girl.GirlApplicationTests" time="1.841" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.imooc.girl.controller.GirlControllerTest" time="11.498" tests="1" errors="0" skipped="0" failures="1">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -60,5 +60,112 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase name="contextLoads" classname="com.imooc.girl.GirlApplicationTests" time="0"/>
+  <testcase name="girlList" classname="com.imooc.girl.controller.GirlControllerTest" time="0.392">
+    <failure message="Response content expected:&lt;aaa&gt; but was:&lt;[{&quot;id&quot;:444,&quot;age&quot;:18,&quot;cupSize&quot;:&quot;A&quot;},{&quot;id&quot;:222,&quot;age&quot;:18,&quot;cupSize&quot;:&quot;C&quot;},{&quot;id&quot;:223,&quot;age&quot;:2,&quot;cupSize&quot;:&quot;D&quot;},{&quot;id&quot;:224,&quot;age&quot;:23,&quot;cupSize&quot;:&quot;D&quot;},{&quot;id&quot;:225,&quot;age&quot;:18,&quot;cupSize&quot;:&quot;H&quot;},{&quot;id&quot;:445,&quot;age&quot;:50,&quot;cupSize&quot;:&quot;I&quot;},{&quot;id&quot;:446,&quot;age&quot;:50,&quot;cupSize&quot;:&quot;I&quot;},{&quot;id&quot;:447,&quot;age&quot;:50,&quot;cupSize&quot;:&quot;I&quot;},{&quot;id&quot;:448,&quot;age&quot;:50,&quot;cupSize&quot;:&quot;I&quot;},{&quot;id&quot;:449,&quot;age&quot;:null,&quot;cupSize&quot;:null},{&quot;id&quot;:450,&quot;age&quot;:3,&quot;cupSize&quot;:&quot;B&quot;},{&quot;id&quot;:451,&quot;age&quot;:20,&quot;cupSize&quot;:&quot;A&quot;},{&quot;id&quot;:452,&quot;age&quot;:20,&quot;cupSize&quot;:&quot;B&quot;},{&quot;id&quot;:453,&quot;age&quot;:20,&quot;cupSize&quot;:&quot;B&quot;},{&quot;id&quot;:454,&quot;age&quot;:20,&quot;cupSize&quot;:&quot;B&quot;},{&quot;id&quot;:455,&quot;age&quot;:20,&quot;cupSize&quot;:&quot;B&quot;},{&quot;id&quot;:456,&quot;age&quot;:20,&quot;cupSize&quot;:&quot;B&quot;},{&quot;id&quot;:457,&quot;age&quot;:20,&quot;cupSize&quot;:&quot;H&quot;},{&quot;id&quot;:458,&quot;age&quot;:20,&quot;cupSize&quot;:&quot;H&quot;},{&quot;id&quot;:459,&quot;age&quot;:19,&quot;cupSize&quot;:&quot;H&quot;}]&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Response content expected:<aaa> but was:<[{"id":444,"age":18,"cupSize":"A"},{"id":222,"age":18,"cupSize":"C"},{"id":223,"age":2,"cupSize":"D"},{"id":224,"age":23,"cupSize":"D"},{"id":225,"age":18,"cupSize":"H"},{"id":445,"age":50,"cupSize":"I"},{"id":446,"age":50,"cupSize":"I"},{"id":447,"age":50,"cupSize":"I"},{"id":448,"age":50,"cupSize":"I"},{"id":449,"age":null,"cupSize":null},{"id":450,"age":3,"cupSize":"B"},{"id":451,"age":20,"cupSize":"A"},{"id":452,"age":20,"cupSize":"B"},{"id":453,"age":20,"cupSize":"B"},{"id":454,"age":20,"cupSize":"B"},{"id":455,"age":20,"cupSize":"B"},{"id":456,"age":20,"cupSize":"B"},{"id":457,"age":20,"cupSize":"H"},{"id":458,"age":20,"cupSize":"H"},{"id":459,"age":19,"cupSize":"H"}]>
+	at com.imooc.girl.controller.GirlControllerTest.girlList(GirlControllerTest.java:23)
+]]></failure>
+    <system-out><![CDATA[18:08:31.311 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.imooc.girl.controller.GirlControllerTest]
+18:08:31.322 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+18:08:31.335 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+18:08:31.380 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.imooc.girl.controller.GirlControllerTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+18:08:31.397 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.imooc.girl.controller.GirlControllerTest], using SpringBootContextLoader
+18:08:31.404 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.imooc.girl.controller.GirlControllerTest]: class path resource [com/imooc/girl/controller/GirlControllerTest-context.xml] does not exist
+18:08:31.405 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.imooc.girl.controller.GirlControllerTest]: class path resource [com/imooc/girl/controller/GirlControllerTestContext.groovy] does not exist
+18:08:31.405 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.imooc.girl.controller.GirlControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+18:08:31.406 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.imooc.girl.controller.GirlControllerTest]: GirlControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:08:31.501 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.imooc.girl.controller.GirlControllerTest]
+18:08:31.643 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [D:\MavenProject\girl\target\classes\com\imooc\girl\GirlApplication.class]
+18:08:31.648 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.imooc.girl.GirlApplication for test class com.imooc.girl.controller.GirlControllerTest
+18:08:31.781 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.imooc.girl.controller.GirlControllerTest]: using defaults.
+18:08:31.782 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+18:08:31.812 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@40a4337a, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@6025e1b6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@22ff4249, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@2d1ef81a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4c402120, org.springframework.test.context.transaction.TransactionalTestExecutionListener@327514f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@5b12b668, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1165b38, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@4c12331b, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7586beff, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@3b69e7d1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@815b41f]
+18:08:31.815 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.imooc.girl.controller.GirlControllerTest]
+18:08:31.816 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.imooc.girl.controller.GirlControllerTest]
+18:08:31.819 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.imooc.girl.controller.GirlControllerTest]
+18:08:31.819 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.imooc.girl.controller.GirlControllerTest]
+18:08:31.821 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.imooc.girl.controller.GirlControllerTest]
+18:08:31.821 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.imooc.girl.controller.GirlControllerTest]
+18:08:31.831 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@7eac9008 testClass = GirlControllerTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@4116aac9 testClass = GirlControllerTest, locations = '{}', classes = '{class com.imooc.girl.GirlApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@62ddbd7e key = [org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebClientAutoConfiguration, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcWebDriverAutoConfiguration]], org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@fcd6521, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@31f924f5, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@44a3ec6b, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@e7e8512, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@57f23557], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+18:08:31.833 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.imooc.girl.controller.GirlControllerTest]
+18:08:31.833 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.imooc.girl.controller.GirlControllerTest]
+18:08:31.874 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.1.9.RELEASE)
+
+2019-10-07 18:08:32.523  INFO 30968 --- [           main] c.i.girl.controller.GirlControllerTest   : Starting GirlControllerTest on joe with PID 30968 (started by Administrator in D:\MavenProject\girl)
+2019-10-07 18:08:32.525  INFO 30968 --- [           main] c.i.girl.controller.GirlControllerTest   : The following profiles are active: dev
+2019-10-07 18:08:33.911  INFO 30968 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-07 18:08:34.034  INFO 30968 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108ms. Found 1 repository interfaces.
+2019-10-07 18:08:34.807  INFO 30968 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ec396060] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-07 18:08:35.515  INFO 30968 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-07 18:08:36.669  INFO 30968 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-07 18:08:36.792  INFO 30968 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-07 18:08:36.941  INFO 30968 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2019-10-07 18:08:36.947  INFO 30968 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-07 18:08:37.216  INFO 30968 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-07 18:08:37.469  INFO 30968 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-10-07 18:08:38.668  INFO 30968 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-07 18:08:40.742  INFO 30968 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-07 18:08:40.851  WARN 30968 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-07 18:08:41.538  INFO 30968 --- [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2019-10-07 18:08:41.538  INFO 30968 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2019-10-07 18:08:41.566  INFO 30968 --- [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 28 ms
+2019-10-07 18:08:41.616  INFO 30968 --- [           main] c.i.girl.controller.GirlControllerTest   : Started GirlControllerTest in 9.726 seconds (JVM running for 11.194)
+2019-10-07 18:08:41.825  INFO 30968 --- [           main] com.imooc.girl.aspect.HttpAspect         : url=http://localhost/girls
+2019-10-07 18:08:41.825  INFO 30968 --- [           main] com.imooc.girl.aspect.HttpAspect         : method=GET
+2019-10-07 18:08:41.825  INFO 30968 --- [           main] com.imooc.girl.aspect.HttpAspect         : ip=127.0.0.1
+2019-10-07 18:08:41.827  INFO 30968 --- [           main] com.imooc.girl.aspect.HttpAspect         : class_method=com.imooc.girl.controller.GirlController.girlList
+2019-10-07 18:08:41.828  INFO 30968 --- [           main] com.imooc.girl.aspect.HttpAspect         : args={}
+2019-10-07 18:08:41.839  INFO 30968 --- [           main] c.imooc.girl.controller.GirlController   : girlList
+2019-10-07 18:08:41.892  INFO 30968 --- [           main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+Hibernate: select girl0_.id as id1_0_, girl0_.age as age2_0_, girl0_.cup_size as cup_size3_0_ from girl girl0_
+2019-10-07 18:08:42.102  INFO 30968 --- [           main] com.imooc.girl.aspect.HttpAspect         : 2222222222222
+2019-10-07 18:08:42.102  INFO 30968 --- [           main] com.imooc.girl.aspect.HttpAspect         : response=[Girl{id=444, age=18, cupSize='A'}, Girl{id=222, age=18, cupSize='C'}, Girl{id=223, age=2, cupSize='D'}, Girl{id=224, age=23, cupSize='D'}, Girl{id=225, age=18, cupSize='H'}, Girl{id=445, age=50, cupSize='I'}, Girl{id=446, age=50, cupSize='I'}, Girl{id=447, age=50, cupSize='I'}, Girl{id=448, age=50, cupSize='I'}, Girl{id=449, age=null, cupSize='null'}, Girl{id=450, age=3, cupSize='B'}, Girl{id=451, age=20, cupSize='A'}, Girl{id=452, age=20, cupSize='B'}, Girl{id=453, age=20, cupSize='B'}, Girl{id=454, age=20, cupSize='B'}, Girl{id=455, age=20, cupSize='B'}, Girl{id=456, age=20, cupSize='B'}, Girl{id=457, age=20, cupSize='H'}, Girl{id=458, age=20, cupSize='H'}, Girl{id=459, age=19, cupSize='H'}]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /girls
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.imooc.girl.controller.GirlController
+           Method = public java.util.List<com.imooc.girl.domain.Girl> com.imooc.girl.controller.GirlController.girlList()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+     Content type = application/json;charset=UTF-8
+             Body = [{"id":444,"age":18,"cupSize":"A"},{"id":222,"age":18,"cupSize":"C"},{"id":223,"age":2,"cupSize":"D"},{"id":224,"age":23,"cupSize":"D"},{"id":225,"age":18,"cupSize":"H"},{"id":445,"age":50,"cupSize":"I"},{"id":446,"age":50,"cupSize":"I"},{"id":447,"age":50,"cupSize":"I"},{"id":448,"age":50,"cupSize":"I"},{"id":449,"age":null,"cupSize":null},{"id":450,"age":3,"cupSize":"B"},{"id":451,"age":20,"cupSize":"A"},{"id":452,"age":20,"cupSize":"B"},{"id":453,"age":20,"cupSize":"B"},{"id":454,"age":20,"cupSize":"B"},{"id":455,"age":20,"cupSize":"B"},{"id":456,"age":20,"cupSize":"B"},{"id":457,"age":20,"cupSize":"H"},{"id":458,"age":20,"cupSize":"H"},{"id":459,"age":19,"cupSize":"H"}]
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  </testcase>
 </testsuite>

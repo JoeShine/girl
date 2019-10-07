@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.imooc.girl.controller.GirlControllerTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 11.498 s <<< FAILURE! - in com.imooc.girl.controller.GirlControllerTest
+girlList(com.imooc.girl.controller.GirlControllerTest)  Time elapsed: 0.392 s  <<< FAILURE!
+java.lang.AssertionError: Response content expected:<aaa> but was:<[{"id":444,"age":18,"cupSize":"A"},{"id":222,"age":18,"cupSize":"C"},{"id":223,"age":2,"cupSize":"D"},{"id":224,"age":23,"cupSize":"D"},{"id":225,"age":18,"cupSize":"H"},{"id":445,"age":50,"cupSize":"I"},{"id":446,"age":50,"cupSize":"I"},{"id":447,"age":50,"cupSize":"I"},{"id":448,"age":50,"cupSize":"I"},{"id":449,"age":null,"cupSize":null},{"id":450,"age":3,"cupSize":"B"},{"id":451,"age":20,"cupSize":"A"},{"id":452,"age":20,"cupSize":"B"},{"id":453,"age":20,"cupSize":"B"},{"id":454,"age":20,"cupSize":"B"},{"id":455,"age":20,"cupSize":"B"},{"id":456,"age":20,"cupSize":"B"},{"id":457,"age":20,"cupSize":"H"},{"id":458,"age":20,"cupSize":"H"},{"id":459,"age":19,"cupSize":"H"}]>
+	at com.imooc.girl.controller.GirlControllerTest.girlList(GirlControllerTest.java:23)
+

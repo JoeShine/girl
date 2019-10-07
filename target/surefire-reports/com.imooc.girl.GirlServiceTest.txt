@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: com.imooc.girl.GirlApplicationTests
+Test set: com.imooc.girl.GirlServiceTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.841 s - in com.imooc.girl.GirlApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.082 s - in com.imooc.girl.GirlServiceTest
